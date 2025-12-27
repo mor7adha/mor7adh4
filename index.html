@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mortadha Ali | Portfolio</title>
-  <meta name="description" content="محفظة مورتضى علي - مختص أمن سيبراني وشبكات.">
-  <meta property="og:title" content="Mortadha Ali Portfolio">
-  <meta property="og:description" content="Cybersecurity & Network Specialist | Secure Programming | TOEFL">
+  <title>Mansour Mohammed Ayash | Portfolio</title>
+  <meta name="description" content="Portfolio of Mansour Mohammed Ayash — final-year cybersecurity student (expected 2026) seeking an entry-level Penetration Tester role.">
+  <meta property="og:title" content="Mansour Mohammed Ayash Portfolio">
+  <meta property="og:description" content="Cybersecurity student (expected 2026) · CCNA fundamentals · Web technologies · Entry-level Penetration Testing">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#0b0f14">
   <link rel="icon" href="assets/logo.svg">
@@ -14,10 +14,29 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<!-- Intro / Boot screen -->
+<div id="intro" class="intro-screen" aria-hidden="false">
+  <div class="intro-bg"></div>
+
+  <div class="intro-content">
+    <h1 class="intro-title" aria-label="Mansour Mohammed Ayash">
+      <span id="introTyped"></span><span class="intro-cursor"></span>
+    </h1>
+
+    <div class="intro-status">
+      <div class="intro-bar">
+        <div class="intro-bar-fill"></div>
+      </div>
+      <p class="intro-sub">SYSTEM INITIALIZING</p>
+    </div>
+  </div>
+</div>
+
   <header class="nav">
     <a class="brand" href="#hero">
       <img src="assets/logo.svg" alt="MA" width="24" height="24">
-      <span>Mortadha&nbsp;Ali</span>
+      <span>Mansour&nbsp;Ayash</span>
     </a>
     <nav class="links">
       <a href="#about" data-i18n="nav.about">عنّي</a>
@@ -37,20 +56,16 @@
     <div class="hero__content">
       <p class="eyebrow" data-i18n="hero.eyebrow">أمن سيبراني · شبكات · برمجة آمنة</p>
       <h1 data-i18n="hero.title">مرحباً، أنا <span class="accent">مُرتضى علي</span></h1>
-      <p class="sub" data-i18n="hero.sub">
-        مختص في <strong>الدفاع عن الأنظمة</strong>، <strong>تقييم الثغرات</strong>، وتصميم
-        <strong>البُنى الشبكية الآمنة</strong>، مع خبرة في <strong>البرمجة الآمنة</strong> وتخفيف التهديدات.
-        حاصل على شهادة <strong>TOEFL</strong> في اللغة الإنجليزية.
-      </p>
+      <p class="sub" data-i18n="hero.sub">Final-year Cybersecurity student (expected graduation 2026) seeking an entry-level Penetration Tester role. Strong fundamentals in CCNA-track networking, web technologies, and security concepts, with a hands-on approach through coursework and self-directed labs.</p>
       <div class="cta">
         <a href="#contact" class="btn" data-i18n="hero.cta1">ابدأ التواصل</a>
         <a href="#projects" class="btn ghost" data-i18n="hero.cta2">استعراض الأعمال</a>
       </div>
       <ul class="badges" aria-label="أبرز ما أقدمه">
-        <li>Hardening</li>
-        <li>Vulnerability&nbsp;Assessment</li>
-        <li>Network&nbsp;Design</li>
-        <li>Threat&nbsp;Mitigation</li>
+        <li>PenTest&nbsp;Basics</li>
+        <li>CCNA&nbsp;Fundamentals</li>
+        <li>Web&nbsp;Design</li>
+        <li>Python</li>
       </ul>
     </div>
     <div class="hero__visual" aria-hidden="true">
@@ -65,10 +80,7 @@
 
   <section id="about" class="section about reveal">
     <h2 data-i18n="about.title">عنّي</h2>
-    <p data-i18n="about.text">
-      أنا مهندس أمن سيبراني وشبكات أساعد المؤسسات على بناء دفاعات تقنية صلبة، من وضع السياسات إلى التنفيذ العملي.
-      أُجري اختبارات اختراق، أُصمّم بنى شبكية آمنة، وأطبّق ممارسات البرمجة الآمنة عبر دورة حياة التطوير (SSDLC).
-    </p>
+    <p data-i18n="about.text">I’m Mansour Mohammed Ayash, a final-year Cybersecurity student at the University of Science and Technology (expected 2026). I’m focused on building strong fundamentals in penetration testing and networking through coursework and hands-on practice.</p>
     <div class="cards">
       <article class="card hoverlift reveal" data-delay="1">
         <h3 data-i18n="about.mission.title">الرسالة</h3>
@@ -80,7 +92,7 @@
       </article>
       <article class="card hoverlift reveal" data-delay="3">
         <h3 data-i18n="about.langs.title">اللغات</h3>
-        <p data-i18n="about.langs.text">العربية · English (TOEFL)</p>
+        <p data-i18n="about.langs.text">Arabic · English (Intermediate)</p>
       </article>
     </div>
   </section>
@@ -91,35 +103,36 @@
       <div class="hoverlift reveal" data-delay="1">
         <h4 data-i18n="skills.defense.title">الدفاع والاختبار</h4>
         <ul>
-          <li>Penetration Testing · Red/Blue Team</li>
-          <li>Vulnerability Scanning (Nmap, Nessus)</li>
-          <li>Endpoint Hardening & Baselines</li>
-          <li>SIEM/SOAR · Log Analysis</li>
+          <li>Penetration Testing fundamentals (entry-level)</li>
+          <li>Security concepts & methodology (OWASP basics)</li>
+          <li>Hands-on labs & reporting basics</li>
+          <li>Responsible testing mindset</li>
         </ul>
       </div>
       <div class="hoverlift reveal" data-delay="2">
         <h4 data-i18n="skills.network.title">الشبكات</h4>
         <ul>
-          <li>Routing & Switching · VLANs · VPN</li>
-          <li>Firewalls (pfSense, Cisco ASA)</li>
-          <li>Wi-Fi Security · NAC</li>
-          <li>Zero-Trust · Micro-segmentation</li>
+          <li>CCNA fundamentals: Routing & Switching</li>
+          <li>Subnetting · VLAN basics · Troubleshooting</li>
+          <li>Network security basics (segmentation concepts)</li>
+          <li>Cisco labs & practice scenarios</li>
         </ul>
       </div>
       <div class="hoverlift reveal" data-delay="3">
         <h4 data-i18n="skills.secprog.title">البرمجة الآمنة</h4>
         <ul>
-          <li>Python · Bash · PowerShell</li>
-          <li>Secure Coding · Code Review</li>
-          <li>Threat Modeling · OWASP Top 10</li>
-          <li>Automation · Scripting</li>
+          <li>Python basics (scripting)</li>
+          <li>JavaScript · HTML</li>
+          <li>Web design fundamentals (responsive pages)</li>
+          <li>Basic automation for learning</li>
         </ul>
       </div>
       <div class="hoverlift reveal" data-delay="4">
         <h4 data-i18n="skills.certs.title">الشهادات</h4>
         <ul>
-          <li>TOEFL (English)</li>
-          <li>+ يمكن إضافة شهادات أخرى لاحقاً</li>
+          <li>CCNA Networking</li>
+          <li>English Language (Intermediate)</li>
+          <li>Cisco Workshops</li>
         </ul>
       </div>
     </div>
@@ -129,43 +142,43 @@
     <h2 data-i18n="projects.title">نماذج أعمال</h2>
     <div class="cards">
       <article class="card proj hoverlift reveal" data-delay="1">
-        <h3 data-i18n="projects.p1.title">تقوية خوادم Linux لمؤسسة متوسطة</h3>
-        <p data-i18n="projects.p1.text">تطبيق CIS Benchmarks، إعداد مراقبة سجلات، وتلقيم تنبيهات إلى SIEM.</p>
-        <ul class="tags"><li>Hardening</li><li>SIEM</li><li>CIS</li></ul>
+        <h3 data-i18n="projects.p1.title">CCNA Practice Labs</h3>
+        <p data-i18n="projects.p1.text">Hands-on practice in routing, switching, subnetting, and VLAN fundamentals.</p>
+        <ul class="tags"><li>CCNA</li><li>Networking</li><li>Labs</li></ul>
       </article>
       <article class="card proj hoverlift reveal" data-delay="2">
-        <h3 data-i18n="projects.p2.title">تقييم ثغرات شامل لشبكة داخلية</h3>
-        <p data-i18n="projects.p2.text">اكتشاف خدمات مكشوفة، تصنيف المخاطر، وخطة إغلاق حسب الأولوية.</p>
-        <ul class="tags"><li>Nmap</li><li>Nessus</li><li>Risk</li></ul>
+        <h3 data-i18n="projects.p2.title">Web Design Practice</h3>
+        <p data-i18n="projects.p2.text">Built responsive pages using HTML and JavaScript with a focus on clean UI.</p>
+        <ul class="tags"><li>HTML</li><li>JavaScript</li><li>Web</li></ul>
       </article>
       <article class="card proj hoverlift reveal" data-delay="3">
-        <h3 data-i18n="projects.p3.title">أتمتة فحوصات OWASP لمشروع ويب</h3>
-        <p data-i18n="projects.p3.text">دمج فحوصات SAST/DAST في CI/CD وتثقيف الفريق حول OWASP Top 10.</p>
-        <ul class="tags"><li>OWASP</li><li>DevSecOps</li><li>CI/CD</li></ul>
+        <h3 data-i18n="projects.p3.title">Security Coursework & Self-Directed Labs</h3>
+        <p data-i18n="projects.p3.text">Applied core security concepts and introductory web security exercises to build penetration testing fundamentals.</p>
+        <ul class="tags"><li>Cybersecurity</li><li>OWASP</li><li>Learning</li></ul>
       </article>
-    </div>
+</div>
   </section>
 
   <section id="services" class="section services reveal">
     <h2 data-i18n="services.title">الخدمات</h2>
     <div class="service-grid">
       <div class="service hoverlift reveal" data-delay="1">
-        <h3 data-i18n="services.vuln.title">تقييم الثغرات</h3>
-        <p data-i18n="services.vuln.text">فحص دوري وتوصيات عملية بالإغلاق وفق أثر الأعمال.</p>
+        <h3 data-i18n="services.vuln.title">Web Security (Entry-level)</h3>
+        <p data-i18n="services.vuln.text">Learning-based assessments and security checklists for web applications.</p>
       </div>
       <div class="service hoverlift reveal" data-delay="2">
-        <h3 data-i18n="services.hard.title">تقوية الأنظمة</h3>
-        <p data-i18n="services.hard.text">Baseline آمن، ضبط خدمات، وإدارة تحديثات.</p>
+        <h3 data-i18n="services.hard.title">Networking Fundamentals</h3>
+        <p data-i18n="services.hard.text">CCNA-track routing/switching basics and structured troubleshooting practice.</p>
       </div>
       <div class="service hoverlift reveal" data-delay="3">
-        <h3 data-i18n="services.net.title">تصميم الشبكات الآمنة</h3>
-        <p data-i18n="services.net.text">تقسيم شبكي، VPN، جدران نارية وسياسات وصول.</p>
+        <h3 data-i18n="services.net.title">Programming Basics</h3>
+        <p data-i18n="services.net.text">Python scripting and web basics (HTML/JavaScript) to support learning and automation.</p>
       </div>
       <div class="service hoverlift reveal" data-delay="4">
-        <h3 data-i18n="services.secprog.title">البرمجة الآمنة</h3>
-        <p data-i18n="services.secprog.text">مراجعات كود، نمذجة تهديدات، وأتمتة مهام الأمان.</p>
+        <h3 data-i18n="services.secprog.title">Web Design</h3>
+        <p data-i18n="services.secprog.text">Simple personal websites and UI layouts with clean, responsive styling.</p>
       </div>
-    </div>
+</div>
   </section>
 
   <section id="resume" class="section resume reveal">
@@ -180,31 +193,62 @@
   </section>
 
   <section id="contact" class="section contact reveal">
-    <h2 data-i18n="contact.title">تواصل معي</h2>
-    <p data-i18n="contact.text">للتعاون أو العروض الوظيفية: </p>
-    <form class="contact__form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
-      <div class="row">
-        <label data-i18n-wrap="contact.name">الاسم
-          <input type="text" name="name" required placeholder="اسمك الكامل">
-        </label>
-        <label data-i18n-wrap="contact.email">البريد
-          <input type="email" name="email" required placeholder="example@mail.com">
-        </label>
+  <h2 data-i18n="contact.title">تواصل معي</h2>
+  <p data-i18n="contact.text">للتعاون، العروض الوظيفية، أو أي استفسار مهني:</p>
+
+  <div class="contact__layout">
+    <form class="contact__form" action="mailto:MANNNNOO2000@gmail.com" method="post" enctype="text/plain">
+      <div class="contact__row">
+        <div class="contact__field">
+          <label data-i18n-wrap="contact.name">الاسم
+            <input type="text" name="name" required placeholder="اسمك الكامل">
+          </label>
+        </div>
+        <div class="contact__field">
+          <label data-i18n-wrap="contact.email">البريد الإلكتروني
+            <input type="email" name="email" required placeholder="example@mail.com">
+          </label>
+        </div>
       </div>
-      <label data-i18n-wrap="contact.message">الرسالة
-        <textarea name="message" rows="5" required placeholder="اكتب رسالتك هنا"></textarea>
-      </label>
-      <button class="btn" type="submit" data-i18n="contact.send">إرسال</button>
+
+      <div class="contact__row">
+        <div class="contact__field contact__field--full">
+          <label data-i18n-wrap="contact.subject">الموضوع
+            <input type="text" name="subject" placeholder="عنوان مختصر لرسالتك">
+          </label>
+        </div>
+      </div>
+
+      <div class="contact__row contact__row--stack">
+        <div class="contact__field contact__field--full">
+          <label data-i18n-wrap="contact.message">الرسالة
+            <textarea name="message" rows="5" required placeholder="اكتب تفاصيل رسالتك هنا"></textarea>
+          </label>
+        </div>
+      </div>
+
+      <div class="contact__footer">
+        <span class="contact__hint" data-i18n="contact.hint">أحاول الرد على جميع الرسائل خلال ٢٤ ساعة.</span>
+        <button class="btn btn--primary" type="submit" data-i18n="contact.send">إرسال الرسالة</button>
+      </div>
     </form>
-    <ul class="social">
-      <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
-      <li><a href="#" aria-label="GitHub">GitHub</a></li>
-      <li><a href="#" aria-label="X/Twitter">X</a></li>
-    </ul>
-  </section>
+
+    <aside class="contact__side">
+      <h3 class="contact__side-title" data-i18n="contact.sideTitle">معلومات إضافية</h3>
+      <p class="contact__side-text" data-i18n="contact.sideText">
+        يمكنك التواصل مباشرة عبر الشبكات الاجتماعية التالية، أو من خلال البريد الموضّح أعلاه.
+      </p>
+      <ul class="social">
+        <li><a href="mailto:MANNNNOO2000@gmail.com" aria-label="Email">Email</a></li>
+        <li><a href="tel:+96778440001" aria-label="Phone">Phone</a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Sana%27a%20Airport%20Palestine%20St." target="_blank" rel="noopener" aria-label="Location">Location</a></li>
+      </ul>
+    </aside>
+  </div>
+</section>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Mortadha Ali • <span data-i18n="footer.rights">جميع الحقوق محفوظة</span></p>
+    <p>© <span id="year"></span> Mansour Mohammed Ayash • <span data-i18n="footer.rights">جميع الحقوق محفوظة</span></p>
   </footer>
 
   <script src="i18n.js"></script>
@@ -228,7 +272,7 @@
       };
       a.href = map[lang].file;
       a.textContent = map[lang].label;
-      a.setAttribute('download', `Mortadha_Ali_Resume_${lang}.pdf`);
+      a.setAttribute('download', `Mansour_Mohammed_Ayash_Resume_${lang}.pdf`);
     }
     // عند التحميل
     setResumeDownload(currentLang());
@@ -237,5 +281,10 @@
       setTimeout(() => setResumeDownload(currentLang()), 0);
     });
   </script>
+
+    <!-- Enlarged card overlay -->
+    <div class="card-overlay" aria-hidden="true">
+      <div class="card-overlay-card"></div>
+    </div>
 </body>
 </html>
