@@ -1,95 +1,186 @@
 <!doctype html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Resume | Mansour Mohammed Ayash</title>
+  <title>Resume | Mortadha Ali Al-Jodrah</title>
   <meta name="theme-color" content="#0b0f14">
   <link rel="stylesheet" href="styles.css">
   <style>
-    .cv{max-width:900px;margin:40px auto;padding:24px;background:var(--card);border:1px solid var(--border);border-radius:18px}
-    .cv h1{margin:0 0 4px}
-    .muted{color:var(--muted)}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-    .cv section{margin-top:18px}
-    ul{margin:0; padding-inline-start:18px}
-    .cv .lang{display:flex; gap:10px; justify-content:flex-end}
-    .cv .lang a{font-weight:700; border:1px solid var(--border); border-radius:12px; padding:.35rem .6rem}
+    .cv {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 24px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px
+    }
+
+    .cv h1 {
+      margin: 0 0 4px
+    }
+
+    .muted {
+      color: var(--muted)
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px
+    }
+
+    .cv section {
+      margin-top: 18px
+    }
+
+    ul {
+      margin: 0;
+      padding-inline-start: 18px
+    }
+
+    .cv .lang {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end
+    }
+
+    .cv .lang a {
+      font-weight: 700;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: .35rem .6rem
+    }
 
     /* Back button (outside the card) */
-    .actions { text-align:center; margin: 30px 0 50px; }
-    .back-btn{
-      display:inline-block; padding:12px 28px; font-size:15px; font-weight:600;
-      border-radius:50px; background:linear-gradient(135deg,#2563eb,#1e40af); color:#fff;
-      text-decoration:none; letter-spacing:.5px; box-shadow:0 6px 16px rgba(37,99,235,.3);
-      transition:all .3s ease; position:relative; overflow:hidden;
+    .actions {
+      text-align: center;
+      margin: 30px 0 50px;
     }
-    .back-btn:hover{ background:linear-gradient(135deg,#1e40af,#2563eb); transform:translateY(-3px) scale(1.05); box-shadow:0 10px 24px rgba(30,64,175,.4) }
-    .back-btn::after{ content:""; position:absolute; top:0; left:-100%; width:100%; height:100%;
-      background:rgba(255,255,255,.2); transform:skewX(-20deg); transition:.5s }
-    .back-btn:hover::after{ left:120% }
+
+    .back-btn {
+      display: inline-block;
+      padding: 12px 28px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 50px;
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: .5px;
+      box-shadow: 0 6px 16px rgba(37, 99, 235, .3);
+      transition: all .3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .back-btn:hover {
+      background: linear-gradient(135deg, #1e40af, #2563eb);
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 10px 24px rgba(30, 64, 175, .4)
+    }
+
+    .back-btn::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, .2);
+      transform: skewX(-20deg);
+      transition: .5s
+    }
+
+    .back-btn:hover::after {
+      left: 120%
+    }
   </style>
 </head>
+
 <body class="ltr">
   <div class="cv">
     <div class="lang"><a href="resume.html">AR</a></div>
 
-    <h1>Mansour Mohammed Ayash</h1>
-    <p class="muted">Penetration Tester · Final-year Cybersecurity student (Expected 2026)</p>
+    <h1>MORTADHA ALI AL-JODRAH</h1>
+    <p class="muted">PENETRATION TESTER | B.Sc. Cybersecurity and Networks</p>
 
     <section>
       <h3>Summary</h3>
-      <p>Final-year Cybersecurity student (expected graduation 2026) seeking an entry-level Penetration Tester role. Strong fundamentals in CCNA-track networking, web technologies, and security concepts, with a hands-on approach through coursework and self-directed labs.</p>
+      <p>Cybersecurity and Networks graduate with a strong focus on penetration testing and vulnerability assessment. I
+        have 10 months of practical experience in identifying security flaws and securing systems. Leveraging my
+        expertise in Python, web development, and AI tools, I deliver innovative security solutions. I am a certified
+        professional (CCNA, Oracle, Aviatrix) with proven leadership skills and a commitment to continuous learning.</p>
+    </section>
+
+    <section>
+      <h3>Professional Experience</h3>
+      <ul>
+        <li><strong>Penetration Tester, VertoCore</strong> <span class="muted">| May 2025 – Feb 2026</span>
+          <ul>
+            <li>Conducted comprehensive penetration testing on web applications and networks to identify and mitigate
+              security vulnerabilities.</li>
+            <li>Utilized Python scripts to automate security assessments, increasing efficiency in detecting and
+              preventing threats.</li>
+            <li>Collaborated with web development teams to implement secure coding practices.</li>
+            <li>Applied advanced AI tools to simulate attack scenarios and enhance defense strategies.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Projects</h3>
+      <ul>
+        <li><strong>Graduation Project: <a href="https://mor7adha.netlify.app/" target="_blank" rel="noopener"
+              style="text-decoration:none; color:inherit;">"DER3" Intelligent Intrusion Detection and Prevention
+              System</a></strong> <span class="muted">| Jan 2023 - Jun 2023</span>
+          <br>Project Lead: Directed the development of a smart security system to detect and block cyberattacks using a
+          hybrid Machine Learning approach. Led the team for "Excellent" score.
+        </li>
+        <li><strong>"CriptX": Advanced Encryption & Steganography Tool</strong>
+          <br>Developed a robust file security tool utilizing industry-standard encryption algorithms and advanced
+          steganography techniques to conceal encrypted files.
+        </li>
+        <li><strong>Lotus Medical Center Website</strong>
+          <br>Designed modern, user-friendly interfaces (UI) connected to a secure database system for efficient data
+          management.
+        </li>
+      </ul>
     </section>
 
     <section class="grid">
       <div>
-        
         <h3>Skills</h3>
         <ul>
-          <li>Web Design</li>
-          <li>English Language (Intermediate)</li>
-          <li>Networking: CCNA fundamentals</li>
-          <li>Programming: Python, JavaScript, HTML</li>
+          <li>Network Security</li>
+          <li>Cryptography & Steganography</li>
+          <li>Team Leadership</li>
+          <li>Python Programming</li>
+          <li>UI/UX Design</li>
+          <li>Prototyping Tools</li>
         </ul>
-
       </div>
-      
+
       <div>
-        <h3>Certificates</h3>
+        <h3>Certificates & Education</h3>
         <ul>
-          <li>CCNA Networking</li>
-          <li>English Language — Intermediate</li>
-          <li>Cisco Workshops</li>
+          <li><strong>B.Sc. Cybersecurity and Networks</strong> — University of Science and Technology (Sep 2021 – 2026)
+          </li>
+          <li><strong>English Language Studies (TOEFL Prep)</strong> — International Language Center (2023 – 2024)</li>
+          <li><strong>High School Diploma</strong> — The Golden Pen School (2019 – 2021)</li>
+          <li>CCNA, Oracle Cloud Infrastructure, Aviatrix Multicloud Network</li>
         </ul>
       </div>
-
     </section>
-
-    
-    <section>
-      <h3>Education</h3>
-      <ul>
-        <li><strong>University of Science and Technology</strong> — BSc in Cybersecurity (Final Year) <span class="muted">| 2022 – 2026 (Expected)</span></li>
-        <li><strong>Al-Ertqaa Modern Schools</strong> — High School Diploma <span class="muted">| 2021 (Grade: 86%)</span></li>
-      </ul>
-    </section>
-
-
-    
-    <section>
-      <h3>Hands-on Practice</h3>
-      <ul>
-        <li>CCNA practice labs (routing, switching, subnetting, VLAN basics)</li>
-        <li>Web design exercises using HTML and JavaScript</li>
-        <li>Introductory cybersecurity labs and web security learning</li>
-      </ul>
-    </section>
-
 
     <section>
       <h3>Contact</h3>
-      <p>Email: MANNNNOO2000@gmail.com · Phone: +96778440001 · Address: Sana'a - Airport - Palestine St.</p>
+      <p>Email: mor7adh4@gmail.com · Address: Airport St. Sana'a City</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/mor7adha" target="_blank" rel="noopener">@mor7adha</a> ·
+        Facebook: <a href="https://www.facebook.com/mortadha.aljodrah/" target="_blank" rel="noopener">Mortadha
+          Al-Jodrah</a></p>
     </section>
   </div>
 
@@ -100,4 +191,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

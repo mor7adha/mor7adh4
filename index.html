@@ -1,42 +1,30 @@
 <!doctype html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mansour Mohammed Ayash | Portfolio</title>
-  <meta name="description" content="Portfolio of Mansour Mohammed Ayash — final-year cybersecurity student (expected 2026) seeking an entry-level Penetration Tester role.">
-  <meta property="og:title" content="Mansour Mohammed Ayash Portfolio">
-  <meta property="og:description" content="Cybersecurity student (expected 2026) · CCNA fundamentals · Web technologies · Entry-level Penetration Testing">
+  <title>Mortadha Ali Al-Jodrah | Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Mortadha Ali Al-Jodrah — Cybersecurity and Networks graduate (2026) experienced in penetration testing, vulnerability assessment, and Python automation.">
+  <meta property="og:title" content="Mortadha Ali Al-Jodrah Portfolio">
+  <meta property="og:description"
+    content="Cybersecurity graduate · Penetration Testing · Network Security · Python Automation · AI-Driven Defense">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#0b0f14">
   <link rel="icon" href="assets/logo.svg">
   <link rel="preload" href="styles.css" as="style">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<!-- Intro / Boot screen -->
-<div id="intro" class="intro-screen" aria-hidden="false">
-  <div class="intro-bg"></div>
 
-  <div class="intro-content">
-    <h1 class="intro-title" aria-label="Mansour Mohammed Ayash">
-      <span id="introTyped"></span><span class="intro-cursor"></span>
-    </h1>
-
-    <div class="intro-status">
-      <div class="intro-bar">
-        <div class="intro-bar-fill"></div>
-      </div>
-      <p class="intro-sub">SYSTEM INITIALIZING</p>
-    </div>
-  </div>
-</div>
 
   <header class="nav">
     <a class="brand" href="#hero">
-      <img src="assets/logo.svg" alt="MA" width="24" height="24">
-      <span>Mansour&nbsp;Ayash</span>
+      <img src="assets/logo.svg" alt="MA" width="50" height="50">
+      <span>Mortadha&nbsp;Ali</span>
     </a>
     <nav class="links">
       <a href="#about" data-i18n="nav.about">عنّي</a>
@@ -56,7 +44,9 @@
     <div class="hero__content">
       <p class="eyebrow" data-i18n="hero.eyebrow">أمن سيبراني · شبكات · برمجة آمنة</p>
       <h1 data-i18n="hero.title">مرحباً، أنا <span class="accent">مُرتضى علي</span></h1>
-      <p class="sub" data-i18n="hero.sub">Final-year Cybersecurity student (expected graduation 2026) seeking an entry-level Penetration Tester role. Strong fundamentals in CCNA-track networking, web technologies, and security concepts, with a hands-on approach through coursework and self-directed labs.</p>
+      <p class="sub" data-i18n="hero.sub">Final-year Cybersecurity student (expected graduation 2026) seeking an
+        entry-level Penetration Tester role. Strong fundamentals in CCNA-track networking, web technologies, and
+        security concepts, with a hands-on approach through coursework and self-directed labs.</p>
       <div class="cta">
         <a href="#contact" class="btn" data-i18n="hero.cta1">ابدأ التواصل</a>
         <a href="#projects" class="btn ghost" data-i18n="hero.cta2">استعراض الأعمال</a>
@@ -80,7 +70,9 @@
 
   <section id="about" class="section about reveal">
     <h2 data-i18n="about.title">عنّي</h2>
-    <p data-i18n="about.text">I’m Mansour Mohammed Ayash, a final-year Cybersecurity student at the University of Science and Technology (expected 2026). I’m focused on building strong fundamentals in penetration testing and networking through coursework and hands-on practice.</p>
+    <p data-i18n="about.text">I’m Mansour Mohammed Ayash, a final-year Cybersecurity student at the University of
+      Science and Technology (expected 2026). I’m focused on building strong fundamentals in penetration testing and
+      networking through coursework and hands-on practice.</p>
     <div class="cards">
       <article class="card hoverlift reveal" data-delay="1">
         <h3 data-i18n="about.mission.title">الرسالة</h3>
@@ -140,23 +132,49 @@
 
   <section id="projects" class="section projects reveal">
     <h2 data-i18n="projects.title">نماذج أعمال</h2>
-    <div class="cards">
-      <article class="card proj hoverlift reveal" data-delay="1">
-        <h3 data-i18n="projects.p1.title">CCNA Practice Labs</h3>
-        <p data-i18n="projects.p1.text">Hands-on practice in routing, switching, subnetting, and VLAN fundamentals.</p>
-        <ul class="tags"><li>CCNA</li><li>Networking</li><li>Labs</li></ul>
+    <div class="featured-grid">
+      <article class="card proj featured hoverlift reveal" data-delay="1">
+        <div class="proj-content">
+          <h3 data-i18n="projects.p1.title">CCNA Practice Labs</h3>
+          <p data-i18n="projects.p1.text">Hands-on practice in routing, switching, subnetting, and VLAN
+            fundamentals.</p>
+          <div class="proj-demo-section">
+            <span data-i18n="projects.p1.demo">Here is a demo version of the project:</span>
+            <a href="https://mor7adha.netlify.app/" target="_blank" rel="noopener" class="demo-link"
+              data-i18n="projects.p1.link">Link of project</a>
+          </div>
+        </div>
+        <ul class="tags">
+          <li>CCNA</li>
+          <li>Networking</li>
+          <li>Labs</li>
+        </ul>
       </article>
-      <article class="card proj hoverlift reveal" data-delay="2">
-        <h3 data-i18n="projects.p2.title">Web Design Practice</h3>
-        <p data-i18n="projects.p2.text">Built responsive pages using HTML and JavaScript with a focus on clean UI.</p>
-        <ul class="tags"><li>HTML</li><li>JavaScript</li><li>Web</li></ul>
-      </article>
-      <article class="card proj hoverlift reveal" data-delay="3">
-        <h3 data-i18n="projects.p3.title">Security Coursework & Self-Directed Labs</h3>
-        <p data-i18n="projects.p3.text">Applied core security concepts and introductory web security exercises to build penetration testing fundamentals.</p>
-        <ul class="tags"><li>Cybersecurity</li><li>OWASP</li><li>Learning</li></ul>
-      </article>
-</div>
+
+      <div class="side-projects">
+        <article class="card proj hoverlift reveal" data-delay="2">
+          <h3 data-i18n="projects.p2.title">Web Design Practice</h3>
+          <p data-i18n="projects.p2.text">Built responsive pages using HTML and JavaScript with a focus on clean UI.
+          </p>
+          <ul class="tags">
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <li>Web</li>
+          </ul>
+        </article>
+        <article class="card proj hoverlift reveal" data-delay="3">
+          <h3 data-i18n="projects.p3.title">Security Coursework & Self-Directed Labs</h3>
+          <p data-i18n="projects.p3.text">Applied core security concepts and introductory web security exercises to
+            build
+            penetration testing fundamentals.</p>
+          <ul class="tags">
+            <li>Cybersecurity</li>
+            <li>OWASP</li>
+            <li>Learning</li>
+          </ul>
+        </article>
+      </div>
+    </div>
   </section>
 
   <section id="services" class="section services reveal">
@@ -168,17 +186,19 @@
       </div>
       <div class="service hoverlift reveal" data-delay="2">
         <h3 data-i18n="services.hard.title">Networking Fundamentals</h3>
-        <p data-i18n="services.hard.text">CCNA-track routing/switching basics and structured troubleshooting practice.</p>
+        <p data-i18n="services.hard.text">CCNA-track routing/switching basics and structured troubleshooting practice.
+        </p>
       </div>
       <div class="service hoverlift reveal" data-delay="3">
         <h3 data-i18n="services.net.title">Programming Basics</h3>
-        <p data-i18n="services.net.text">Python scripting and web basics (HTML/JavaScript) to support learning and automation.</p>
+        <p data-i18n="services.net.text">Python scripting and web basics (HTML/JavaScript) to support learning and
+          automation.</p>
       </div>
       <div class="service hoverlift reveal" data-delay="4">
         <h3 data-i18n="services.secprog.title">Web Design</h3>
         <p data-i18n="services.secprog.text">Simple personal websites and UI layouts with clean, responsive styling.</p>
       </div>
-</div>
+    </div>
   </section>
 
   <section id="resume" class="section resume reveal">
@@ -193,62 +213,94 @@
   </section>
 
   <section id="contact" class="section contact reveal">
-  <h2 data-i18n="contact.title">تواصل معي</h2>
-  <p data-i18n="contact.text">للتعاون، العروض الوظيفية، أو أي استفسار مهني:</p>
+    <h2 data-i18n="contact.title">تواصل معي</h2>
+    <p data-i18n="contact.text">للتعاون، العروض الوظيفية، أو أي استفسار مهني:</p>
 
-  <div class="contact__layout">
-    <form class="contact__form" action="mailto:MANNNNOO2000@gmail.com" method="post" enctype="text/plain">
-      <div class="contact__row">
-        <div class="contact__field">
-          <label data-i18n-wrap="contact.name">الاسم
-            <input type="text" name="name" required placeholder="اسمك الكامل">
-          </label>
+    <div class="social-grid">
+      <a href="https://github.com/mor7adha" target="_blank" rel="noopener" class="social-card hoverlift reveal"
+        data-delay="1">
+        <div class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+            </path>
+          </svg>
         </div>
-        <div class="contact__field">
-          <label data-i18n-wrap="contact.email">البريد الإلكتروني
-            <input type="email" name="email" required placeholder="example@mail.com">
-          </label>
+        <h3 data-i18n="contact.github">GitHub</h3>
+        <p>@mor7adha</p>
+      </a>
+
+      <a href="https://instagram.com/mor7adha" target="_blank" rel="noopener" class="social-card hoverlift reveal"
+        data-delay="2">
+        <div class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
         </div>
-      </div>
+        <h3 data-i18n="contact.instagram">Instagram</h3>
+        <p>@mor7adha</p>
+      </a>
 
-      <div class="contact__row">
-        <div class="contact__field contact__field--full">
-          <label data-i18n-wrap="contact.subject">الموضوع
-            <input type="text" name="subject" placeholder="عنوان مختصر لرسالتك">
-          </label>
+      <a href="https://wa.me/967778150247" target="_blank" rel="noopener" class="social-card hoverlift reveal"
+        data-delay="3">
+        <div class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+            </path>
+          </svg>
         </div>
-      </div>
+        <h3 data-i18n="contact.whatsapp">WhatsApp</h3>
+        <p>+967 778 150 247</p>
+      </a>
 
-      <div class="contact__row contact__row--stack">
-        <div class="contact__field contact__field--full">
-          <label data-i18n-wrap="contact.message">الرسالة
-            <textarea name="message" rows="5" required placeholder="اكتب تفاصيل رسالتك هنا"></textarea>
-          </label>
+      <a href="https://www.linkedin.com/in/mor7adha" target="_blank" rel="noopener" class="social-card hoverlift reveal"
+        data-delay="4">
+        <div class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
         </div>
-      </div>
+        <h3 data-i18n="contact.linkedin">LinkedIn</h3>
+        <p>@mor7adha</p>
+      </a>
 
-      <div class="contact__footer">
-        <span class="contact__hint" data-i18n="contact.hint">أحاول الرد على جميع الرسائل خلال ٢٤ ساعة.</span>
-        <button class="btn btn--primary" type="submit" data-i18n="contact.send">إرسال الرسالة</button>
-      </div>
-    </form>
+      <a href="https://www.facebook.com/mortadha.aljodrah/" target="_blank" rel="noopener"
+        class="social-card hoverlift reveal" data-delay="5">
+        <div class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </div>
+        <h3 data-i18n="contact.facebook">Facebook</h3>
+        <p>Mortadha Al-Jodrah</p>
+      </a>
 
-    <aside class="contact__side">
-      <h3 class="contact__side-title" data-i18n="contact.sideTitle">معلومات إضافية</h3>
-      <p class="contact__side-text" data-i18n="contact.sideText">
-        يمكنك التواصل مباشرة عبر الشبكات الاجتماعية التالية، أو من خلال البريد الموضّح أعلاه.
-      </p>
-      <ul class="social">
-        <li><a href="mailto:MANNNNOO2000@gmail.com" aria-label="Email">Email</a></li>
-        <li><a href="tel:+96778440001" aria-label="Phone">Phone</a></li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=Sana%27a%20Airport%20Palestine%20St." target="_blank" rel="noopener" aria-label="Location">Location</a></li>
-      </ul>
-    </aside>
-  </div>
-</section>
+      <a href="mailto:mor7adh4@gmail.com" class="social-card hoverlift reveal" data-delay="4">
+        <div class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </div>
+        <h3 data-i18n="contact.email">Email</h3>
+        <p>mor7adh4@gmail.com</p>
+      </a>
+    </div>
+  </section>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Mansour Mohammed Ayash • <span data-i18n="footer.rights">جميع الحقوق محفوظة</span></p>
+    <p>© <span id="year"></span> Mortadha Ali Al-Jodrah • <span data-i18n="footer.rights">جميع الحقوق محفوظة</span></p>
   </footer>
 
   <script src="i18n.js"></script>
@@ -256,14 +308,14 @@
 
   <!-- 📌 سكربت خفيف يضبط زر التحميل حسب اللغة الحالية ويحدّثه بعد التبديل -->
   <script>
-    function currentLang(){
+    function currentLang() {
       const saved = localStorage.getItem('lang');
       if (saved === 'ar' || saved === 'en') return saved;
-      const htmlLang = (document.documentElement.lang||'').toLowerCase();
+      const htmlLang = (document.documentElement.lang || '').toLowerCase();
       if (htmlLang.startsWith('ar') || document.documentElement.dir === 'rtl') return 'ar';
       return 'en';
     }
-    function setResumeDownload(lang){
+    function setResumeDownload(lang) {
       const a = document.getElementById('downloadResume');
       if (!a) return;
       const map = {
@@ -272,7 +324,7 @@
       };
       a.href = map[lang].file;
       a.textContent = map[lang].label;
-      a.setAttribute('download', `Mansour_Mohammed_Ayash_Resume_${lang}.pdf`);
+      a.setAttribute('download', `Mortadha_Ali_Resume_${lang}.pdf`);
     }
     // عند التحميل
     setResumeDownload(currentLang());
@@ -282,9 +334,10 @@
     });
   </script>
 
-    <!-- Enlarged card overlay -->
-    <div class="card-overlay" aria-hidden="true">
-      <div class="card-overlay-card"></div>
-    </div>
+  <!-- Enlarged card overlay -->
+  <div class="card-overlay" aria-hidden="true">
+    <div class="card-overlay-card"></div>
+  </div>
 </body>
+
 </html>

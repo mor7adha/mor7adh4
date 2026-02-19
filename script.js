@@ -85,36 +85,4 @@ document.querySelectorAll('.section').forEach((sec) => {
 })();    
 
 
-// Intro typing + exit logic
-(() => {
-  const introEl = document.querySelector('#intro');
-  const typedTarget = document.querySelector('#introTyped');
 
-  if (!introEl || !typedTarget) {
-    document.body.classList.add('intro-finished');
-    return;
-  }
-
-  const fullText = 'MANSOUR  AYASH'; // two spaces like the design
-  let i = 0;
-  const speed = 120; // typing speed (ms per character)
-
-  function step() {
-    typedTarget.textContent = fullText.slice(0, i);
-    i += 1;
-
-    if (i <= fullText.length) {
-      setTimeout(step, speed);
-    } else {
-      introEl.classList.add('intro-screen--typed');
-      // let the bar + status play for a bit, then fade out the intro
-      setTimeout(() => {
-        introEl.classList.add('intro-screen--done');
-        document.body.classList.add('intro-finished');
-      }, 2200);
-    }
-  }
-
-  // small delay before starting to type
-  setTimeout(step, 500);
-})();

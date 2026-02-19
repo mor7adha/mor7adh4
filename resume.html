@@ -1,95 +1,180 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>السيرة الذاتية | Mansour Mohammed Ayash</title>
+  <title>السيرة الذاتية | مرتضى علي الجدرة</title>
   <meta name="theme-color" content="#0b0f14">
   <link rel="stylesheet" href="styles.css">
   <style>
-    .cv{max-width:900px;margin:40px auto;padding:24px;background:var(--card);border:1px solid var(--border);border-radius:18px}
-    .cv h1{margin:0 0 4px}
-    .muted{color:var(--muted)}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-    .cv section{margin-top:18px}
-    ul{margin:0; padding-inline-start:18px}
-    .cv .lang{display:flex; gap:10px; justify-content:flex-end}
-    .cv .lang a{font-weight:700; border:1px solid var(--border); border-radius:12px; padding:.35rem .6rem}
+    .cv {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 24px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px
+    }
+
+    .cv h1 {
+      margin: 0 0 4px
+    }
+
+    .muted {
+      color: var(--muted)
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px
+    }
+
+    .cv section {
+      margin-top: 18px
+    }
+
+    ul {
+      margin: 0;
+      padding-inline-start: 18px
+    }
+
+    .cv .lang {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end
+    }
+
+    .cv .lang a {
+      font-weight: 700;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: .35rem .6rem
+    }
 
     /* زر الرجوع (خارج الكرت) */
-    .actions { text-align:center; margin: 30px 0 50px; }
-    .back-btn{
-      display:inline-block; padding:12px 28px; font-size:15px; font-weight:700;
-      border-radius:50px; background:linear-gradient(135deg,#2563eb,#1e40af); color:#fff;
-      text-decoration:none; letter-spacing:.3px; box-shadow:0 6px 16px rgba(37,99,235,.3);
-      transition:all .3s ease; position:relative; overflow:hidden;
+    .actions {
+      text-align: center;
+      margin: 30px 0 50px;
     }
-    .back-btn:hover{ background:linear-gradient(135deg,#1e40af,#2563eb); transform:translateY(-3px) scale(1.05); box-shadow:0 10px 24px rgba(30,64,175,.4) }
-    .back-btn::after{ content:""; position:absolute; top:0; left:-100%; width:100%; height:100%;
-      background:rgba(255,255,255,.2); transform:skewX(-20deg); transition:.5s }
-    .back-btn:hover::after{ left:120% }
+
+    .back-btn {
+      display: inline-block;
+      padding: 12px 28px;
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: 50px;
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: .3px;
+      box-shadow: 0 6px 16px rgba(37, 99, 235, .3);
+      transition: all .3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .back-btn:hover {
+      background: linear-gradient(135deg, #1e40af, #2563eb);
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 10px 24px rgba(30, 64, 175, .4)
+    }
+
+    .back-btn::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, .2);
+      transform: skewX(-20deg);
+      transition: .5s
+    }
+
+    .back-btn:hover::after {
+      left: 120%
+    }
   </style>
 </head>
+
 <body>
   <div class="cv">
     <div class="lang"><a href="resume-en.html">EN</a></div>
 
-    <h1>منصور محمد عياش</h1>
-     <p class="muted">مختبر اختراق · طالب أمن سيبراني (متوقع التخرج 2026)</p>
+    <h1>مرتضى علي الجدره</h1>
+    <p class="muted">مختبر اختراق · بكالوريوس أمن سيبراني وشبكات</p>
 
     <section>
       <h3>النبذة</h3>
-      <p>طالب أمن سيبراني في السنة الأخيرة (متوقع التخرج 2026) وأسعى لفرصة مبتدئة كمختبر اختراق. لدي أساس قوي في مسار CCNA وتقنيات الويب ومفاهيم الأمن، مع تطبيق عملي عبر مواد الجامعة وتدريب ذاتي (Labs).</p>
+      <p>خريج أمن سيبراني وشبكات بتركيز قوي على اختبار الاختراق وتقييم الثغرات. لدي ١٠ أشهر من الخبرة العملية في تحديد
+        العيوب الأمنية وتأمين الأنظمة. أستخدم خبرتي في بايثون، وتطوير الويب، وأدوات الذكاء الاصطناعي لتقديم حلول أمنية
+        مبتكرة. قائد فريق مثبت ومهني معتمد (CCNA, Oracle, Aviatrix) مع التزام بالتعلم المستمر.</p>
+    </section>
+
+    <section>
+      <h3>الخبرة المهنية</h3>
+      <ul>
+        <li><strong>مختبر اختراق، VertoCore</strong> <span class="muted">| مايو 2025 – فبراير 2026</span>
+          <ul>
+            <li>إجراء اختبارات اختراق شاملة على تطبيقات الويب والشبكات لتحديد وتخفيف الثغرات الأمنية.</li>
+            <li>استخدام سكربتات Python لأتمتة التقييمات الأمنية، مما زاد من كفاءة اكتشاف وجنع التهديدات.</li>
+            <li>التعاون مع فرق تطوير الويب لتطبيق ممارسات البرمجة الآمنة.</li>
+            <li>تطبيق أدوات الذكاء الاصطناعي المتقدمة لمحاكاة سيناريوهات الهجوم وتعزيز استراتيجيات الدفاع.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>المشاريع</h3>
+      <ul>
+        <li><strong>مشروع التخرج: <a href="https://mor7adha.netlify.app/" target="_blank" rel="noopener"
+              style="text-decoration:none; color:inherit;">نظام "DER3" الذكي للكشف عن التسلل والمنع</a></strong> <span
+            class="muted">| يناير 2023 -
+            يونيو 2023</span>
+          <br>قائد المشروع: أدرت تطوير نظام أمان ذكي للكشف عن الهجمات السيبرانية وحظرها باستخدام نهج هجين. حقق الفريق
+          درجة "ممتاز".
+        </li>
+        <li><strong>أداة "CriptX": تشفير متقدم وإخفاء معلومات</strong>
+          <br>تطوير أداة أمان ملفات قوية تستخدم خوارزميات التشفير القياسية وتقنيات إخفاء المعلومات المتقدمة.
+        </li>
+        <li><strong>موقع مركز لوتس الطبي</strong>
+          <br>تصميم واجهات مستخدم حديثة وسهلة الاستخدام متصلة بقاعدة بيانات آمنة لإدارة البيانات بكفاءة.
+        </li>
+      </ul>
     </section>
 
     <section class="grid">
       <div>
-        
         <h3>المهارات</h3>
         <ul>
-          <li>تصميم الويب</li>
-          <li>اللغة الإنجليزية (متوسط)</li>
-          <li>الشبكات: أساسيات CCNA</li>
-          <li>البرمجة: Python, JavaScript, HTML</li>
+          <li>أمن الشبكات</li>
+          <li>التشفير وإخفاء المعلومات</li>
+          <li>قيادة الفرق</li>
+          <li>برمجة Python</li>
+          <li>تصميم UI/UX</li>
+          <li>أدوات النمذجة (Prototyping)</li>
         </ul>
-
       </div>
-      
+
       <div>
-        <h3>الشهادات</h3>
+        <h3>الشهادات والتعليم</h3>
         <ul>
-          <li>شبكات CCNA</li>
-          <li>اللغة الإنجليزية — Intermediate</li>
-          <li>ورشات سيسكو</li>
+          <li><strong>بكالوريوس أمن سيبراني وشبكات</strong> — جامعة العلوم والتكنولوجيا (2021 – 2026)</li>
+          <li><strong>دراسات اللغة الإنجليزية (TOEFL)</strong> — المركز الدولي للغات (2023 – 2024)</li>
+          <li><strong>شهادة الثانوية العامة</strong> — مدرسة القلم الذهبي (2019 – 2021)</li>
+          <li>CCNA, Oracle Cloud, Aviatrix Multicloud</li>
         </ul>
       </div>
-
     </section>
-
-    
-    <section>
-      <h3>التعليم</h3>
-      <ul>
-        <li><strong>جامعة العلوم والتكنولوجيا</strong> — بكالوريوس أمن سيبراني (السنة الرابعة/الأخيرة) <span class="muted">| 2022 – 2026 (متوقع)</span></li>
-        <li><strong>مدارس الارتقاء الحديثة</strong> — شهادة ثانوية <span class="muted">| 2021 (المعدل: 86%)</span></li>
-      </ul>
-    </section>
-
-
-    
-    <section>
-      <h3>تدريب عملي</h3>
-      <ul>
-        <li>تدريبات CCNA (Routing/Switching وSubnetting وVLAN)</li>
-        <li>تمارين تصميم الويب باستخدام HTML وJavaScript</li>
-        <li>Labs ومقررات أمن سيبراني وأساسيات أمن الويب</li>
-      </ul>
-    </section>
-
 
     <section>
       <h3>التواصل</h3>
-      <p>البريد: MANNNNOO2000@gmail.com · الهاتف: +96778440001 · العنوان: صنعاء - المطار - شارع فلسطين</p>
+      <p>البريد: mor7adh4@gmail.com · العنوان: شارع المطار، مدينة صنعاء</p>
+      <p>لينكد إن: <a href="https://www.linkedin.com/in/mor7adha" target="_blank" rel="noopener">@mor7adha</a> · فيسبوك:
+        <a href="https://www.facebook.com/mortadha.aljodrah/" target="_blank" rel="noopener">Mortadha Al-Jodrah</a></p>
     </section>
   </div>
 
@@ -100,4 +185,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
