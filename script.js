@@ -9,8 +9,6 @@ document.querySelector('#themeToggle')?.addEventListener('click', () => {
   applyTheme(document.body.classList.contains('light') ? 'dark' : 'light');
 });
 document.body.classList.add('js');
-const year = document.querySelector('#year');
-if (year) year.textContent = new Date().getFullYear();
 
 (() => {
   const header = document.querySelector('.nav');
