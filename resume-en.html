@@ -1,196 +1,33 @@
 <!doctype html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Resume | Mortadha Ali Al-Jodrah</title>
-  <meta name="theme-color" content="#0b0f14">
   <link rel="icon" type="image/svg+xml" href="assets/mortadha-logo.svg">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .cv {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 24px;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 18px
-    }
-
-    .cv h1 {
-      margin: 0 0 4px
-    }
-
-    .muted {
-      color: var(--muted)
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px
-    }
-
-    .cv section {
-      margin-top: 18px
-    }
-
-    ul {
-      margin: 0;
-      padding-inline-start: 18px
-    }
-
-    .cv .lang {
-      display: flex;
-      gap: 10px;
-      justify-content: flex-end
-    }
-
-    .cv .lang a {
-      font-weight: 700;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: .35rem .6rem
-    }
-
-    /* Back button (outside the card) */
-    .actions {
-      text-align: center;
-      margin: 30px 0 50px;
-    }
-
-    .back-btn {
-      display: inline-block;
-      padding: 12px 28px;
-      font-size: 15px;
-      font-weight: 600;
-      border-radius: 50px;
-      background: linear-gradient(135deg, #2563eb, #1e40af);
-      color: #fff;
-      text-decoration: none;
-      letter-spacing: .5px;
-      box-shadow: 0 6px 16px rgba(37, 99, 235, .3);
-      transition: all .3s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .back-btn:hover {
-      background: linear-gradient(135deg, #1e40af, #2563eb);
-      transform: translateY(-3px) scale(1.05);
-      box-shadow: 0 10px 24px rgba(30, 64, 175, .4)
-    }
-
-    .back-btn::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: rgba(255, 255, 255, .2);
-      transform: skewX(-20deg);
-      transition: .5s
-    }
-
-    .back-btn:hover::after {
-      left: 120%
-    }
-  </style>
+  <link rel="stylesheet" href="resume.css">
 </head>
-
-<body class="ltr">
-  <div class="cv">
-    <div class="lang"><a href="resume.html">AR</a></div>
-
-    <h1>MORTADHA ALI AL-JODRAH</h1>
-    <p class="muted">PENETRATION TESTER | B.Sc. Cybersecurity and Networks</p>
-
-    <section>
-      <h3>Summary</h3>
-      <p>Cybersecurity and Networks graduate with a strong focus on penetration testing and vulnerability assessment. I
-        have 10 months of practical experience in identifying security flaws and securing systems. Leveraging my
-        expertise in Python, web development, and AI tools, I deliver innovative security solutions. I am a certified
-        professional (CCNA, Oracle, Aviatrix) with proven leadership skills and a commitment to continuous learning.</p>
-    </section>
-
-    <section>
-      <h3>Professional Experience</h3>
-      <ul>
-        <li><strong>Penetration Tester, VertoCore</strong> <span class="muted">| May 2025 – Feb 2026</span>
-          <ul>
-            <li>Conducted comprehensive penetration testing on web applications and networks to identify and mitigate
-              security vulnerabilities.</li>
-            <li>Utilized Python scripts to automate security assessments, increasing efficiency in detecting and
-              preventing threats.</li>
-            <li>Collaborated with web development teams to implement secure coding practices.</li>
-            <li>Applied advanced AI tools to simulate attack scenarios and enhance defense strategies.</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>Projects</h3>
-      <ul>
-        <li><strong>Graduation Project: <a href="https://mor7adha.netlify.app/" target="_blank" rel="noopener"
-              style="text-decoration:none; color:inherit;">"DER3" Intelligent Intrusion Detection and Prevention
-              System</a></strong> <span class="muted">| Jan 2023 - Jun 2023</span>
-          <br>Project Lead: Directed the development of a smart security system to detect and block cyberattacks using a
-          hybrid Machine Learning approach. Led the team for "Excellent" score.
-        </li>
-        <li><strong>"CriptX": Advanced Encryption & Steganography Tool</strong>
-          <br>Developed a robust file security tool utilizing industry-standard encryption algorithms and advanced
-          steganography techniques to conceal encrypted files.
-        </li>
-        <li><strong>Lotus Medical Center Website</strong>
-          <br>Designed modern, user-friendly interfaces (UI) connected to a secure database system for efficient data
-          management.
-        </li>
-      </ul>
-    </section>
-
-    <section class="grid">
-      <div>
-        <h3>Skills</h3>
-        <ul>
-          <li>Network Security</li>
-          <li>Cryptography & Steganography</li>
-          <li>Team Leadership</li>
-          <li>Python Programming</li>
-          <li>UI/UX Design</li>
-          <li>Prototyping Tools</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Certificates & Education</h3>
-        <ul>
-          <li><strong>B.Sc. Cybersecurity and Networks</strong> — University of Science and Technology (Sep 2021 – 2026)
-          </li>
-          <li><strong>English Language Studies (TOEFL Prep)</strong> — International Language Center (2023 – 2024)</li>
-          <li><strong>High School Diploma</strong> — The Golden Pen School (2019 – 2021)</li>
-          <li>CCNA, Oracle Cloud Infrastructure, Aviatrix Multicloud Network</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h3>Contact</h3>
-      <p>Email: mortadh4.ali@gmail.com · Address: Airport St. Sana'a City</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/mor7adha" target="_blank" rel="noopener">@mor7adha</a> ·
-        Facebook: <a href="https://www.facebook.com/mortadha.aljodrah/" target="_blank" rel="noopener">Mortadha
-          Al-Jodrah</a></p>
-    </section>
-  </div>
-
-  <!-- Back to Home OUTSIDE the CV card -->
-  <div class="actions">
-    <a href="index.html" class="back-btn">← Back to Home</a>
-  </div>
-
+<body class="resume-page">
+  <header class="resume-toolbar">
+    <a href="index.html">Back to website</a>
+    <div><a href="resume.html" lang="ar">العربية</a><a href="assets/resume-en.pdf" download="Mortadha_Ali_Resume_en.pdf">Download PDF</a><button type="button" data-print-resume>Print / Save PDF</button></div>
+  </header>
+  <main class="cv">
+    <header class="cv-header">
+      <h1>Mortadha Ali Al-Jodrah</h1>
+      <p class="cv-role">Web Application Penetration Testing | AI Automation | Web Design & Development</p>
+      <p class="muted">Jeddah, Saudi Arabia</p>
+      <div class="cv-contact"><a href="mailto:mortadh4.ali@gmail.com">mortadh4.ali@gmail.com</a><a href="https://wa.me/966593692994" dir="ltr">+966593692994</a><a href="https://mor7adh4.netlify.app">mor7adh4.netlify.app</a></div>
+    </header>
+    <section><h2>Summary</h2><p>Cybersecurity and Networks graduate with experience assessing web applications, building AI-enabled workflows, and designing websites. Led a university-recognized intrusion detection and prevention project and built a multilingual assistant that manages debt records from everyday instructions.</p></section>
+    <section><h2>Technical skills</h2><div class="cv-skills"><div><h3>Web security</h3><ul><li>Web application penetration testing</li><li>Vulnerability assessment</li><li>Secure coding</li></ul></div><div><h3>AI & automation</h3><ul><li>AI agents & API integration</li><li>Workflow automation & Python scripting</li><li>Machine learning for anomaly detection</li></ul></div><div><h3>Web development</h3><ul><li>User interface design</li><li>Website development</li><li>Database integration</li></ul></div><div><h3>Network security</h3><ul><li>Intrusion detection & prevention</li><li>Rule-based filtering</li><li>Rate limiting</li></ul></div></div></section>
+    <section><h2>Professional experience</h2><article><p class="muted">Current</p><h3>Owner & Operator · Keycode</h3><p>Operate keycode.surf, an online store offering AI subscriptions and digital services to customers in Yemen. Deliver client projects and prepare supporting documentation.</p></article><article><p class="muted">Nov 2025 – Mar 2026</p><h3>Web Penetration Testing & AI Automation Intern · VertoCore</h3><p>Assessed web applications and networks for vulnerabilities and worked with developers on secure coding practices. Worked on AI automation and wrote Python scripts for recurring security assessments.</p></article></section>
+    <section><h2>Education</h2><p>Bachelor’s Degree in Cybersecurity and Networks · University of Science and Technology, College of Computing and Information Technology · 2022–2026.</p></section>
+    <section><h2>Selected projects</h2><article><h3>DER3 · Intelligent IDS/IPS</h3><p>Led a team building a network defense system that combines machine learning for anomaly detection, rules for known threats, and rate limiting for denial-of-service traffic. Earned an Excellent grade and recognition among the cohort’s top graduation projects.</p><p class="muted">Simplified project overview — AI features excluded. <a href="https://mor7adha.netlify.app/">mor7adha.netlify.app</a></p></article><article><h3>AI-powered debt management</h3><p>Built a multilingual assistant that understands Arabic dialects. Users can add or edit debts, check amounts owed and receivable, and calculate their net balance. Overdue payment reminders run every two days.</p></article><article><h3>AI agent web platform</h3><p>Connected multiple AI agents to a personal web platform through API integration.</p></article><article><h3>Lotus Medical Center website</h3><p>Designed the website interface and connected it to a database for managing medical center records.</p></article><article><h3>CriptX · Encryption & steganography</h3><p>Built a tool that encrypts files, conceals the encrypted data in images, and restores the files using a key or password.</p></article><article><h3>Yemenia Airways project</h3><p>Contributed to a project for Yemenia Airways.</p></article></section>
+    <section><h2>Certifications & training</h2><ul><li>Oracle Cloud Infrastructure 2025 Certified Foundations Associate · Oracle · Jul 2025</li><li>Aviatrix Certified Engineer – Multicloud Network Associate · Aviatrix · Jul 2025</li><li>CCNA: Enterprise Networking, Security, and Automation · Cisco Networking Academy · Feb 2026 (course completion)</li><li>Security Awareness Workshop Series: Insider Threats · EC-Council · Jul 2025</li><li>Banking training in networks, information security, and data center operations · CAC Bank · 12 hours · Jul 2025</li></ul></section>
+    <section><h2>Additional information</h2><p>Arabic (native). English: 180 hours of ESOL coursework, including TOEFL preparation (PBT A and B), at the International Language Center in 2023.</p><p>Third place in the University of Science and Technology student creativity competition, 2023–2024.</p></section>
+  </main>
   <script src="script.js"></script>
 </body>
-
 </html>

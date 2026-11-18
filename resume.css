@@ -1,0 +1,69 @@
+/* Web and print layout for the Arabic and English resumes. */
+.resume-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 900px;
+  margin: 24px auto;
+}
+.resume-toolbar > div { display: flex; flex-wrap: wrap; gap: 8px; }
+.resume-toolbar a, .resume-toolbar button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+  color: var(--text);
+  font-size: .85rem;
+}
+.cv { max-width: 900px; margin: 0 auto 40px; padding: 40px; border: 1px solid var(--border); border-radius: 24px; background: var(--card); }
+.cv-header { padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+.cv h1 { font-size: clamp(1.7rem, 4vw, 2.5rem); }
+.cv-role { color: var(--accent); font-weight: 600; }
+.cv-contact { display: flex; flex-wrap: wrap; gap: 0 20px; }
+.cv-contact a { display: inline-flex; align-items: center; min-height: 44px; font-size: .9rem; overflow-wrap: anywhere; }
+.cv section { margin-top: 32px; }
+.cv h2 { font-size: 1.3rem; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+.cv h3 { font-size: 1rem; margin-bottom: 6px; }
+.cv article + article { margin-top: 20px; }
+.cv p, .cv li { color: var(--muted); }
+.cv article > .muted { font-size: .85rem; margin-bottom: 4px; color: var(--accent); }
+.cv ul { margin: 0; padding-inline-start: 20px; }
+.cv li + li { margin-top: 6px; }
+.cv-skills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.cv a { text-underline-offset: 4px; }
+@media (max-width: 600px) {
+  .resume-toolbar { margin-block: 16px; }
+  .resume-toolbar > div { width: 100%; }
+  .resume-toolbar > div > * { flex: 1 1 auto; }
+  .cv { padding: 20px; border-radius: 18px; }
+  .cv-skills { grid-template-columns: minmax(0, 1fr); }
+  .cv-contact { display: flex; flex-direction: column; align-items: flex-start; }
+}
+@page { size: A4; margin: 14mm; }
+@media print {
+  html, body { background: #fff !important; color: #111 !important; }
+  body { padding: 0; font-size: 10pt; line-height: 1.45; }
+  .resume-toolbar { display: none; }
+  .cv { width: auto; max-width: none; margin: 0; padding: 0; border: 0; border-radius: 0; background: #fff; }
+  .cv-header { padding-bottom: 10px; }
+  .cv h1 { font-size: 23pt; margin-bottom: 5px; }
+  .cv h2 { font-size: 12pt; margin-bottom: 8px; padding-bottom: 4px; color: #16324e; border-color: #ccd3dc; break-after: avoid; }
+  .cv h3 { font-size: 10pt; break-after: avoid; }
+  .cv section { margin-top: 14px; }
+  .cv p, .cv li, .cv .muted { color: #222 !important; }
+  .cv p { margin-bottom: 7px; }
+  .cv article { break-inside: avoid; }
+  .cv article + article { margin-top: 10px; }
+  .cv-role, .cv article > .muted { color: #16324e !important; }
+  .cv-contact { flex-direction: row; gap: 0 14px; }
+  .cv-contact a { min-height: 0; font-size: 9pt; }
+  .cv-skills { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 24px; }
+  .cv-skills > div { break-inside: avoid; }
+  .cv li + li { margin-top: 3px; }
+}
