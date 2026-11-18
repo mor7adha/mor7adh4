@@ -192,7 +192,8 @@ body.light .brand img {
   gap: 28px;
   align-items: center;
   min-height: 72vh;
-  padding-top: 42px
+  padding-top: 42px;
+  padding-inline: clamp(0px, calc(5vw - 24px), 72px)
 }
 
 .hero__content .eyebrow {
