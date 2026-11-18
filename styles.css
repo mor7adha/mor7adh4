@@ -112,10 +112,14 @@ p {
 
 .brand img {
   display: block;
-  width: 64px;
-  height: 64px;
+  width: 52px;
+  height: 52px;
   flex-shrink: 0;
-  border-radius: 12px;
+  color-scheme: dark;
+}
+
+body.light .brand img {
+  color-scheme: light;
 }
 
 .brand span {
@@ -507,8 +511,8 @@ textarea {
 
 @media (max-width: 400px) {
   .brand img {
-    width: 52px;
-    height: 52px;
+    width: 44px;
+    height: 44px;
   }
 
   .brand span {
