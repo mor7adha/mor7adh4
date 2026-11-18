@@ -111,9 +111,15 @@ p {
 }
 
 .brand img {
-  height: 110px;
-  width: auto;
-  margin-block: -30px;
+  display: block;
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+
+.brand span {
+  white-space: nowrap;
 }
 
 .brand::after {
@@ -496,6 +502,17 @@ textarea {
 
   .links {
     display: none
+  }
+}
+
+@media (max-width: 400px) {
+  .brand img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .brand span {
+    display: none;
   }
 }
 
