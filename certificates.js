@@ -18,7 +18,6 @@
   const title = dialog.querySelector('#certificateDialogTitle');
   const issuer = dialog.querySelector('#certificateDialogIssuer');
   const original = dialog.querySelector('#certificateOriginal');
-  const download = dialog.querySelector('#certificateDownload');
   const position = dialog.querySelector('#certificatePosition');
   const previous = dialog.querySelector('#certificatePrevious');
   const next = dialog.querySelector('#certificateNext');
@@ -84,8 +83,7 @@
     zoom.hidden = isPdf;
     pdfHelp.hidden = !isPdf;
     previous.disabled = next.disabled = viewerDocuments.length < 2;
-    original.href = download.href = item.file;
-    download.download = 'Mortadha_Ali_' + item.id + (isPdf ? '.pdf' : '.jpeg');
+    original.href = item.file;
     const media = document.createElement(isPdf ? 'iframe' : 'img');
     media.addEventListener('load', () => {
       if (token === renderToken) loading.hidden = true;
