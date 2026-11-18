@@ -349,21 +349,43 @@ html[dir="rtl"] .certificate-arrow {
   }
 }
 
-/* Compact document cards and comfortable preview controls on phones. */
-@media (max-width: 560px) {
+/* Original document-card layout at a smaller size on phones. */
+@media screen and (max-width: 600px) {
   .certificate-toolbar { gap: 12px; margin-top: 24px; }
   .certificate-filters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; }
-  .certificate-filters button { padding: 8px 10px; font-size: .875rem; line-height: 1.5; }
-  .certificate-grid { gap: 12px; }
-  .certificate-card { display: grid; grid-template-columns: clamp(80px, 24vw, 112px) minmax(0, 1fr); }
-  .certificate-thumbnail { aspect-ratio: auto; min-height: 144px; padding: 8px; border-bottom: 0; border-inline-end: 1px solid var(--border); }
+  .certificate-filters button { padding: 8px 10px; border-radius: 15px; font-size: .875rem; line-height: 1.5; }
+  .certificate-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .certificate-card { border-radius: 20px; }
+  .certificate-card:hover { transform: none; border-color: var(--border); box-shadow: none; }
+  .certificate-thumbnail { aspect-ratio: 4 / 3; padding: 8px; background: #eef2f6; }
   .certificate-thumbnail img { inset: 8px; width: calc(100% - 16px); height: calc(100% - 16px); }
-  .certificate-format { inset-block-start: 6px; inset-inline-start: 6px; font-size: .6rem; padding: 1px 5px; }
-  .certificate-card-body { padding: 14px; }
-  .certificate-card-body p { font-size: .75rem; line-height: 1.6; margin-bottom: 6px; }
-  .certificate-card-body h3 { font-size: .94rem; line-height: 1.5; margin-bottom: 10px; }
-  .certificate-card-action { font-size: .8rem; }
-  .certificate-more { width: 100%; margin-top: 20px; }
+  .certificate-format { inset-block-start: 6px; inset-inline-start: 6px; border-radius: 7px; font-size: .625rem; padding: 1px 5px; }
+  .certificate-card-body { padding: 12px; }
+  .certificate-card-body p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    min-height: 3em;
+    font-size: .75rem;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+  .certificate-card-body h3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    min-height: 4.5em;
+    font-size: .875rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+  .certificate-card-action { gap: 6px; font-size: .78rem; }
+  .certificate-card-action svg { width: 16px; height: 16px; }
+  .certificate-more { width: 100%; margin-top: 20px; border-radius: 18px; }
+  .certificate-dialog { border-radius: 24px; }
+  .certificate-dialog button, .certificate-dialog-footer a { border-radius: 15px; }
   .certificate-navigation { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); width: 100%; }
   .certificate-actions { width: 100%; justify-content: center; }
   .certificate-actions > * { flex: 1 1 auto; }
