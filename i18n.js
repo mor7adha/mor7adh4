@@ -115,6 +115,54 @@ const dict = {
     'footer.rights': 'All rights reserved'
   }
 };
+
+Object.assign(dict.ar, {
+  "nav.certificates": "الشهادات",
+  "certificates.title": "الشهادات والوثائق",
+  "certificates.intro": "شهادات في الشبكات والحوسبة السحابية والتدريب المهني واللغة الإنجليزية، إلى جانب وثائق التكريم والتوصية الأكاديمية.",
+  "certificates.filters": "تصفية الشهادات والوثائق",
+  "certificates.all": "جميع الوثائق",
+  "certificates.technical": "التقنية والتدريب",
+  "certificates.language": "اللغة الإنجليزية",
+  "certificates.recognition": "التكريم والتوصيات",
+  "certificates.view": "استعراض الوثيقة",
+  "certificates.more": "عرض جميع الوثائق",
+  "certificates.count": "عرض {shown} من {total} وثيقة",
+  "certificates.close": "إغلاق المعاينة",
+  "certificates.previous": "السابق",
+  "certificates.next": "التالي",
+  "certificates.openOriginal": "فتح الملف",
+  "certificates.download": "تحميل",
+  "certificates.zoom": "الحجم الأصلي",
+  "certificates.fit": "ملاءمة الشاشة",
+  "certificates.loading": "جارٍ تحميل المعاينة…",
+  "certificates.failed": "تعذرت المعاينة. يمكنك فتح الملف الأصلي.",
+  "certificates.pdfHelp": "إذا لم تظهر المعاينة، استخدم «فتح الملف»."
+});
+Object.assign(dict.en, {
+  "nav.certificates": "Certificates",
+  "certificates.title": "Certificates & Documents",
+  "certificates.intro": "Networking, cloud, professional training and English language certificates, alongside recognition and academic recommendations.",
+  "certificates.filters": "Filter certificates and documents",
+  "certificates.all": "All documents",
+  "certificates.technical": "Technology & Training",
+  "certificates.language": "English Language",
+  "certificates.recognition": "Recognition & Recommendations",
+  "certificates.view": "View document",
+  "certificates.more": "Show all documents",
+  "certificates.count": "Showing {shown} of {total} documents",
+  "certificates.close": "Close preview",
+  "certificates.previous": "Previous",
+  "certificates.next": "Next",
+  "certificates.openOriginal": "Open file",
+  "certificates.download": "Download",
+  "certificates.zoom": "Original size",
+  "certificates.fit": "Fit to window",
+  "certificates.loading": "Loading preview…",
+  "certificates.failed": "Preview unavailable. You can open the original file.",
+  "certificates.pdfHelp": "If the preview is unavailable, choose Open file."
+});
+
 function applyLanguage(lang) {
   const isEN = lang === 'en';
   document.documentElement.lang = isEN ? 'en' : 'ar';
@@ -142,7 +190,13 @@ function applyLanguage(lang) {
     }
   });
 
+  document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+    const label = dict[lang]?.[el.getAttribute('data-i18n-aria')];
+    if (label !== undefined) el.setAttribute('aria-label', label);
+  });
+
   localStorage.setItem('lang', lang);
+  document.dispatchEvent(new CustomEvent('languagechange', { detail: { lang } }));
 }
 
 const initial = localStorage.getItem('lang') || 'en';
